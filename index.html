@@ -19,13 +19,21 @@
 
 <body>
     <header class="h-[100px]">
-        <nav class="px-[60px] py-6 flex items-center justify-between">
-            <div class="w-[196px] flex gap-[10px] items-center">
+        <nav class="px-4 md:px-[60px] py-6 
+            flex flex-col md:flex-row 
+            gap-4 md:gap-0 
+            items-center justify-between w-full">
+
+            <!-- Logo Section -->
+            <div class="w-full md:w-[196px] flex justify-center md:justify-start gap-[10px] items-center">
                 <img src="./assets/logo.png" alt="bangladesh logo" class="w-[50px]">
-                <h4 class="inter text-[#006747] font-extrabold">Emergency Service</h4>
+                <h4 class="inter text-[#006747] font-extrabold text-center md:text-left">Emergency Service</h4>
             </div>
-            <div class="w-[400px] flex items-center justify-between">
-                <div class="flex items-center justify-center w-[123px] h-[52px] bg-[#41ff6b1a]  rounded-[50px]">
+
+            <!-- Stats / Copy Section -->
+            <div
+                class="w-full md:w-[400px] flex flex-col sm:flex-row items-center justify-center md:justify-between gap-2 sm:gap-4 mt-4 md:mt-0">
+                <div class="flex items-center justify-center w-[123px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
                     <h4 class="mr-2 inter text-base font-black" id="heart-incrementor">0</h4>
                     <img src="./assets/heart.png" alt="heart icon" class="w-7">
                 </div>
@@ -40,10 +48,12 @@
             </div>
         </nav>
     </header>
+
     <main>
         <!-- hero section -->
-        <section
-            class="h-[240px] border px-16 flex flex-col items-center justify-center [background-image:linear-gradient(to_right,_#013223_0%,_#006747_50%,_#013223_100%)]">
+        <section class="min-h-[240px] px-4 text-center 
+        flex flex-col items-center justify-center 
+        bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
             <div>
                 <img src="./assets/logo-dark.png" alt="logo-dark" class="w-[92px]">
             </div>
@@ -60,13 +70,20 @@
         </section>
 
         <!-- bishal section -->
-        <section class="bg-[#f5fff6] px-[60px] flex items-center justify-between gap-[30px] ">
+        <section class="bg-[#f5fff6] px-4 md:px-[60px] 
+                    flex flex-col lg:flex-row 
+                    items-start justify-between 
+                    gap-6 w-full">
+
             <!-- card Section -->
-            <section class="card-section w-[1370px] h-[1140px] mt-12 mb-20">
+            <section class="card-section w-full mt-12 mb-20">
                 <!-- card container -->
-                <div class="card-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card-container grid grid-cols-1 
+                            sm:grid-cols-2 
+                            lg:grid-cols-3 
+                            gap-6 w-full">
                     <!-- service card 1 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -90,19 +107,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 2 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#DFEFFF] rounded-2xl flex justify-center items-center">
@@ -126,19 +151,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 3 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -162,19 +195,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 4 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -198,19 +239,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 5 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -234,19 +283,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 6 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -270,19 +327,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 7 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -306,19 +371,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 8 -->
-                    <div class="w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -342,19 +415,27 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                     <!-- service card 9 -->
-                    <div class=" service-card w-full h-[360px] p-7 bg-white shadow-lg shadow-slate-200 rounded-xl">
+                    <div class="w-full h-auto p-7 bg-white shadow-lg rounded-xl">
                         <!-- icon container -->
                         <div class="flex justify-between items-center">
                             <div class="w-[60px] h-[60px] bg-[#FFE3E2] rounded-2xl flex justify-center items-center">
@@ -378,21 +459,29 @@
                             </div>
                         </div>
                         <!-- card button container -->
-                        <div class="flex w-full justify-between items-center gap-2">
-                            <button
-                                class="copy-btn border flex border-gray-500 text-gray-500 px-6 py-2 gap-1 rounded-lg"
-                                data-copy-target=".text-3xl">
+                        <div class="flex flex-col sm:flex-row w-full justify-between items-center gap-2">
+                            <button class="copy-btn flex items-center justify-center gap-2 
+                                           px-3 py-2 text-sm 
+                                           sm:px-4 sm:py-2 sm:text-base 
+                                           md:px-5 md:py-2.5 md:text-lg
+                                           text-gray-500 
+                                           rounded-lg shadow 
+                                           hover:bg-blue-100 active:scale-95 
+                                           transition-all duration-200 w-full sm:w-auto">
                                 <span><i class="fa-regular fa-copy"></i></span>Copy
                             </button>
-                            <button
-                                class="flex items-center justify-center bg-[#00A63E] text-white px-7 py-2 gap-1 rounded-lg call-span"><span><i
-                                        class="fa-solid fa-phone"></i></span>Call</button>
+                            <button class="flex items-center justify-center bg-[#00A63E] text-white 
+                                           px-4 py-2 sm:px-5 sm:py-2.5 md:px-7 md:py-2 
+                                           gap-1 rounded-lg call-span text-sm sm:text-base md:text-lg 
+                                           w-full sm:w-auto">
+                                <span><i class="fa-solid fa-phone"></i></span>Call
+                            </button>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- history container -->
-            <section class="w-[400px] h-[1140px] bg-white rounded-xl mt-12 mb-20 p-6" id="history-section">
+            <section class="w-full lg:w-[400px] bg-white rounded-xl mt-12 mb-20 p-6">
                 <div class="flex justify-between items-center">
                     <div class="flex items-center gap-2">
                         <span class="text-[18px]"><i class="fa-solid fa-clock"></i></span>
@@ -413,3 +502,5 @@
 </body>
 
 </html>
+
+bg-[#00A63E]
