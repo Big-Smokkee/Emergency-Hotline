@@ -85,7 +85,6 @@ document.querySelectorAll(".copy-btn").forEach(btn => {
         // 4. Copy using a simple trick
         navigator.clipboard.writeText(text)
             .then(() => {
-                btn.innerText = "Copied!";
                 setTimeout(() => btn.innerHTML = `<span><i class="fa-regular fa-copy"></i></span>Copy`, 1200);
                 alert("Copy success!");
                 //coin er number
