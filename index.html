@@ -20,29 +20,32 @@
 <body>
     <header class="h-[100px]">
         <nav class="px-4 md:px-[60px] py-6 
-            flex flex-col md:flex-row 
+            flex  md:flex-row 
             gap-4 md:gap-0 
             items-center justify-between w-full">
 
             <!-- Logo Section -->
-            <div class="w-full md:w-[196px] flex justify-center md:justify-start gap-[10px] items-center">
+            <div
+                class="w-full md:w-[196px] flex flex-col md:flex-row justify-center md:justify-start gap-[10px] items-center">
                 <img src="./assets/logo.png" alt="bangladesh logo" class="w-[50px]">
                 <h4 class="inter text-[#006747] font-extrabold text-center md:text-left">Emergency Service</h4>
             </div>
 
             <!-- Stats / Copy Section -->
             <div
-                class="w-full md:w-[400px] flex flex-col sm:flex-row items-center justify-center md:justify-between gap-2 sm:gap-4 mt-4 md:mt-0">
-                <div class="flex items-center justify-center w-[123px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
+                class="w-full md:w-[400px] flex sm:flex-row items-center justify-center md:justify-between gap-2 sm:gap-4 mt-4 md:mt-0">
+                <div
+                    class="flex items-center justify-center w-[80px] md:w-[123px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
                     <h4 class="mr-2 inter text-base font-black" id="heart-incrementor">0</h4>
                     <img src="./assets/heart.png" alt="heart icon" class="w-7">
                 </div>
-                <div class="flex items-center justify-center w-[123px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
+                <div
+                    class="flex items-center justify-center w-[80px] md:w-[123px] h-[52px] bg-[#41ff6b1a] rounded-[50px]">
                     <h4 class="mr-1 inter text-base font-black" id="coin-decrementor">100</h4>
                     <img src="./assets/coin.png" alt="Coin icon" class="w-7">
                 </div>
                 <h4
-                    class="font-semibold flex items-center justify-center w-[123px] h-[52px] bg-[#00A63E] rounded-[50px] text-white">
+                    class="font-semibold flex items-center justify-center w-[80px] md:w-[123px] h-[52px] bg-[#00A63E] rounded-[50px] text-white">
                     <span class="mr-1" id="copy-number">0</span>Copy
                 </h4>
             </div>
@@ -51,9 +54,9 @@
 
     <main>
         <!-- hero section -->
-        <section class="min-h-[240px] px-4 text-center 
+        <section class="min-h-[240px] px-4 py-4 md:py-0 text-center 
         flex flex-col items-center justify-center 
-        bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223]">
+        bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] mt-10 md:mt-0">
             <div>
                 <img src="./assets/logo-dark.png" alt="logo-dark" class="w-[92px]">
             </div>
