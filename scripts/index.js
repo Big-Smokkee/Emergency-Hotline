@@ -31,7 +31,6 @@ for (const btn of callSpan) {
         const serviceName = card.querySelector("p").innerText;
         // phone number
         const phoneNumber = card.querySelector("h3.text-3xl").innerText;
-        // history name
         const historyName = card.querySelector("h3.history-name");
 
 
