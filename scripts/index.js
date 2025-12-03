@@ -80,12 +80,12 @@ document.querySelectorAll(".copy-btn").forEach(btn => {
 
         // 3. Get text
         const text = target.innerText.trim();
-
+        console.log(text);
         // 4. Copy using a simple trick
         navigator.clipboard.writeText(text)
             .then(() => {
                 setTimeout(() => btn.innerHTML = `<span><i class="fa-regular fa-copy"></i></span>Copy`, 1200);
-                alert("Copy success!");
+                alert(`নম্বর কপি হয়েছে : ${text}`);
                 //coin er number
                 let copyValue = getElementValue("copy-number");
                 copyValue++;
